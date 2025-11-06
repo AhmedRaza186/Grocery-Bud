@@ -29,7 +29,7 @@ mainBtn.addEventListener('click', () => {
     
     if(mainBtn.innerText === 'Edit'){
         let input = document.querySelector('input').value
-        editingP.textContent = input 
+        editP.textContent = input 
         mainBtn.innerText = 'Submit'
         document.querySelector('input').value = ''
         editingP = null
@@ -60,25 +60,26 @@ function getInput(){
     `
 
     let clear = document.querySelector('.clear')
-    clear.querySelector('button').addEventListener('click',e => {
-        document.querySelectorAll('.task').forEach(task => {
-            task.remove()
-        })
-
-    })
     container.insertBefore(task, clear)
     document.querySelector('input').value = ''
-
-
+    
+    
     task.querySelector('.edit').addEventListener('click', e => {
         let p = task.querySelector('p')
         editP = p
         document.querySelector('input').value = p.textContent
         mainBtn.innerText = 'Edit'
     })
-
+    
     task.querySelector('.del').addEventListener('click', e => {
         task.remove()
+    })
+    
+    clear.querySelector('button').addEventListener('click',e => {
+        document.querySelectorAll('.task').forEach(task => {
+            task.remove()
+        })
+
     })
 }
 

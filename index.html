@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", serif
+        }
+
+        .container {
+            margin-top: 150px !important;
+            padding-top: 50px;
+            width: 35%;
+            height: auto;
+            background: white;
+            color: #1a2a44;
+            display: flex;
+            gap: 15px;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 2px 14px 20px 0px rgba(0, 0, 0, 0.404);
+            border-radius: 10px;
+        }
+
+        .container h1 {
+            font-size: 2rem;
+            margin-top: 25px;
+            font-weight: 500;
+            letter-spacing: 3px;
+        }
+
+        .userInput {
+            display: flex;
+            justify-content: center;
+            width: 85%;
+            border: none;
+        }
+
+        .userInput input {
+            background: #eef4fa;
+            width: 80%;
+            padding: 5px 10px;
+            border-radius: 15px 0 0 15px;
+            border: none;
+            outline: none;
+        }
+
+        .userInput button {
+            background: #9bcff8;
+            width: 20%;
+            padding: 5px 10px;
+            border-radius: 0 15px 15px 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        .task {
+            margin-top: 15px;
+            width: 100%;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .task .btns button {
+            cursor: pointer;
+            font-size: 1rem;
+            background: transparent;
+            border: none;
+        }
+
+        .clear {
+            width: 100%;
+            margin-bottom: 35px;
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .clear button {
+            width: 40%;
+            background: transparent;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #e45e5f;
+            border: none;
+            letter-spacing: 3px;
+            cursor: pointer;
+        }
+
+        @media (max-width:1024px) {
+            .container {
+                width: 50%;
+            }
+        }
+
+        @media (max-width:786px) {
+            .container {
+                width: 70%;
+            }
+        }
+
+        @media (max-width:420px) {
+            .container {
+                width: 90%;
+
+            }
+
+            .container h1 {
+                font-size: 1.5rem;
+            }
+
+
+            .userInput input{
+                width: 705%;
+            }
+
+            .userInput button {
+                width:25%;
+                font-size: .8rem;
+            }
+            .clear button{
+                font-size: .9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

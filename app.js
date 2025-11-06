@@ -32,7 +32,7 @@ mainBtn.addEventListener('click', () => {
         editP.textContent = input 
         mainBtn.innerText = 'Submit'
         document.querySelector('input').value = ''
-        editingP = null
+        editP = null
         return
     }
     
